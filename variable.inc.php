@@ -37,9 +37,9 @@ ajout :/volume1/web dans open_basedir (webstation / Paramètres PHP Open base di
 echo "<!-- chargement var base de données -->";
 $ip_loc=$_SERVER["SERVER_ADDR"];
 $hostname=$ip_loc;
-$user="root";
+$user="user_bdd";
 $bdd_homewizard="homewizard";/*change $bdd*/
-$passwd_homewizard ="fckgwrhqq2";/*change passwd*/
+$passwd_homewizard ="password1234";/*change passwd*/
 $table="etat";
 $table_histo="historique";
 $table_scenario="scenario";
@@ -56,8 +56,8 @@ $req=mysql_query("SELECT `etat_variable` FROM `variable` where `nom_variable`='d
 $res = mysql_fetch_row($req) or die (mysql_error());
 $duree_pause=$res[0];
 echo "<!--chargement var box domotique-->";
-$ip_serv="192.168.0.48";
-$passwd_box="fckgwrhqq2";
+$ip_serv="adresse_homewizard";
+$passwd_box="password1234";
 $lien_racine="http://frederic.suretat.com";
 $ip_ext=$_SERVER["HTTP_HOST"];
 $nom_fichier_update="update_homewizard.php";
@@ -99,9 +99,9 @@ include ('homewizard/update_scenarios/variable_scenarios.inc.php');
 //$freeboxapkeypwd="zP+0jVer4q65LTZVXdRUTTk6Z2gXyNWnGfKYcWyKA4AAdkYGii12/ejr2klAXtWV";
 
 /*travail include ('../travail/releve_heures/variables.php'); :*/
-$bdd_travail = "CV_FRED";
-$user_travail  = "root";
-$passwd_travail  = "fckgwrhqq2";
+$bdd_travail = "bdd_travail";
+$user_travail  = "user_bdd";
+$passwd_travail  = "mdp_bdd";
 $table_travail[1]= "paye";
 $table_travail[2]="retenues";
 $table_travail[3]="entreprise";
@@ -109,9 +109,9 @@ $table_travail[4]="mission";
 $table_travail[5]="releve_heures";
 $table_civilite= "Civilite";
 /*freebox*/
-$url_freebox_dist_https="https://suretat.freeboxos.fr:445";
-$url_freebox_dist="http://suretat.freeboxos.fr:444";
+$url_freebox_dist_https="url_dist";
+$url_freebox_dist="url_dist";
 /*musique*/
 $bdd_musique = "musique";
-$password_musique = "fckgwrhqq2";
+$password_musique = "mdp_music";
 ?>

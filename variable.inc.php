@@ -90,13 +90,11 @@ $etat_thermo[]=array();
 $etat_bdd_switch[]=array();
 $etat_bdd_histo_kaku[]=array();
 $etat_bdd_thermo[]=array();
-$mail_from="serveur@suretat.com";
-$mail_to="fred.suretat@gmail.com";
+$mail_from="from@mail.com";
+$mail_to="to@mail.com";
 
 /*chargement variables scenarios*/
 include ('homewizard/update_scenarios/variable_scenarios.inc.php');
-//$freeboxapkey='net.aissam.test1';
-//$freeboxapkeypwd="zP+0jVer4q65LTZVXdRUTTk6Z2gXyNWnGfKYcWyKA4AAdkYGii12/ejr2klAXtWV";
 
 /*travail include ('../travail/releve_heures/variables.php'); :*/
 $bdd_travail = "bdd_travail";

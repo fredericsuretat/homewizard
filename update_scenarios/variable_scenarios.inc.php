@@ -1,6 +1,6 @@
 <?php
-$freeboxapkey='net.aissam.test1';
-$freeboxapkeypwd="zP+0jVer4q65LTZVXdRUTTk6Z2gXyNWnGfKYcWyKA4AAdkYGii12/ejr2klAXtWV";
+$freeboxapkey='freeboxapkey';
+$freeboxapkeypwd="freeboxpassword";
 
 $alarme_use="off";
 $telecommande_na="Telecommande Na";
